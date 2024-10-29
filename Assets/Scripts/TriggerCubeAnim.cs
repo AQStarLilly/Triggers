@@ -11,6 +11,7 @@ public class TriggerCubeAnim : MonoBehaviour
     private void Start()
     {
         _animator = AnimatedObject.GetComponent<Animator>();
+        _animator.enabled = false;
     }
 
     void OnTriggerStay(Collider other)
